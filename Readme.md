@@ -35,37 +35,37 @@ Funcionalidades Implementadas
 •	Descrição: Os usuários podem se cadastrar e fazer login no sistema para acessar suas tarefas.
 •	Implementação:
 o	Servlets Utilizadas:
-	UsuarioController.java: Responsável por gerenciar as requisições de login e cadastro de usuários.
+	UsuarioController.java: Responsável por gerenciar as requisições de login e cadastro de usuários.
 o	Classes:
-	Usuario.java: Modelo que representa o usuário no sistema.
-	UsuarioDAO.java: Classe que implementa o padrão DAO para acesso ao banco de dados.
+	Usuario.java: Modelo que representa o usuário no sistema.
+	UsuarioDAO.java: Classe que implementa o padrão DAO para acesso ao banco de dados.
 o	JSP Relacionados:
-	login.jsp: Página de login do usuário.
-	cadastroUsuario.jsp: Página de cadastro do usuário.
-	editarLogin.jsp: Página para editar informações do usuário.
-2. Gerenciamento de Projetos
+	login.jsp: Página de login do usuário.
+	cadastroUsuario.jsp: Página de cadastro do usuário.
+	editarLogin.jsp: Página para editar informações do usuário.
+3. Gerenciamento de Projetos
 •	Descrição: Usuários autenticados podem criar e visualizar seus projetos. Cada projeto contém título, data final, descrição e status.
 •	Implementação:
 o	Servlets Utilizadas:
-	ProjetoController.java: Responsável por gerenciar as requisições de criação e visualização de projetos.
+	ProjetoController.java: Responsável por gerenciar as requisições de criação e visualização de projetos.
 o	Classes:
-	Projeto.java: Modelo que representa um projeto no sistema.
-	ProjetoDAO.java: Classe que implementa o padrão DAO para acesso ao banco de dados.
+	Projeto.java: Modelo que representa um projeto no sistema.
+	ProjetoDAO.java: Classe que implementa o padrão DAO para acesso ao banco de dados.
 o	JSP Relacionados:
-	criarProjeto.jsp: Página de criação de projetos.
-	listarProjetos.jsp: Página de visualização dos detalhes de um projeto, e editar e excluir o projeto selecionado.
-	editarProjetos.jsp: Página de edição de projetos.
-3. Listagem de Projetos
+	criarProjeto.jsp: Página de criação de projetos.
+	listarProjetos.jsp: Página de visualização dos detalhes de um projeto, e editar e excluir o projeto selecionado.
+	editarProjetos.jsp: Página de edição de projetos.
+4. Listagem de Projetos
 •	Descrição: Página para visualização de todos os projetos.
 •	Implementação:
 o	Servlets Utilizadas:
-	ProjetoController.java: Responsável por gerenciar as requisições para listar todos os projetos do usuário.
+	ProjetoController.java: Responsável por gerenciar as requisições para listar todos os projetos do usuário.
 o	JSP Relacionados:
-	listarTodosProjetos.jsp: Página que exibe todos os projetos do usuário autenticado.
+	listarTodosProjetos.jsp: Página que exibe todos os projetos do usuário autenticado.
 o	Comentários: A listagem de projetos é eficiente, exibindo os projetos em uma tabela com paginação para facilitar a navegação.
-4. Persistência de Dados
+5. Persistência de Dados
 •	Descrição: Todas as informações sobre usuários e projetos são armazenadas em um banco de dados MySQL, utilizando o padrão DAO para acessar e manipular os dados.
 •	Implementação:
 o	Banco de Dados:
-	Configuração: O banco de dados MySQL foi configurado com tabelas para armazenar usuários e projetos.
-	Classe Relacionada: Foi utilizado o padrão Factory para implementação da conexão com o banco: ConnectionFactory.java.
+	Configuração: O banco de dados MySQL foi configurado com tabelas para armazenar usuários e projetos.
+	Classe Relacionada: Foi utilizado o padrão Factory para implementação da conexão com o banco: ConnectionFactory.java.
