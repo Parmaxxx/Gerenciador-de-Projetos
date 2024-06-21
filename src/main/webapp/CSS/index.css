@@ -1,0 +1,35 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+.bg {
+    background-image: url("../Images/backgroundImg.jpg");
+    height: 100%;
+}
+.welcome-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.welcome-text h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.welcome-text p {
+    font-size: 1.5rem;
+}
+.navbar {
+    background-color: rgba(43, 43, 43, 0.8);
+}
+.navbar-brand img {
+    width: 120px;
+    height: auto;
+}
+
+.card {
+    opacity: 0.85; /* Ajuste o valor de 0 a 1 conforme necessário */
+}
