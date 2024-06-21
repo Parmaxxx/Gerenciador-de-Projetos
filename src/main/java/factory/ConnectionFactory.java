@@ -11,7 +11,7 @@ public class ConnectionFactory {
         try {
             Class.forName(DRIVER_CLASS); // Carregar o driver explicitamente
             return DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/gerenciamento_projetos", "root", "F31H0kP41");
+                    "jdbc:mysql://localhost:3306/gerenciamento_projetos", "root", "senha");
         } catch (ClassNotFoundException e) {
             throw new RuntimeException("Erro ao carregar o driver JDBC: " + e.getMessage(), e);
         } catch (SQLException e) {
