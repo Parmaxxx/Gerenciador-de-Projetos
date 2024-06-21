@@ -43,11 +43,11 @@ public class UsuarioController extends HttpServlet {
             if (usuario != null) {
                 // Login bem-sucedido
                 HttpSession session = request.getSession();
-                session.setAttribute("usuario", usuario); // Armazena o ID do usuário na sessão
-                response.sendRedirect("telaProjeto.jsp"); // Redireciona para a página telaProjeto.jsp
+                session.setAttribute("usuario", usuario);
+                response.sendRedirect("telaProjeto.jsp");
             } else {
                 // Login mal-sucedido
-                response.sendRedirect("login.jsp"); // Redireciona para a página login.jsp
+                response.sendRedirect("login.jsp");
             }
         }
         else if (acao.equals("logout")) {
@@ -65,7 +65,11 @@ public class UsuarioController extends HttpServlet {
             UsuarioDAO usuarioDAO = new UsuarioDAO();
             usuarioDAO.atualizarUsuario(usuario);
 
+            Usuario usuarioAtualizado = usuarioDAO.buscarUsuarioPorId(usuario.getId());
+            request.getSession().setAttribute("usuario", usuarioAtualizado);
+
             response.sendRedirect("telaProjeto.jsp");
+
         }
     }
 
