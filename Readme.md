@@ -1,5 +1,81 @@
-Sistema de Gerenciamento de Projetos
-Sera necessario para utilizar a aplicação os seguintes requisitos
+
+# Gerenciador de Projetos
+
+
+Bem-vindo ao Gerenciador de Projetos! Este é um sistema robusto para gerenciar projetos de maneira eficiente e organizada. Desenvolvido com as melhores práticas de desenvolvimento e um design amigável, o Gerenciador de Projetos é a ferramenta perfeita para equipes que buscam produtividade e colaboração.
+
+## 📋 Funcionalidades
+Criação e gerenciamento de projetos: Crie novos projetos e organize suas tarefas de maneira eficiente.
+Atribuição de tarefas: Atribua tarefas aos membros da equipe e acompanhe o progresso.
+Calendário integrado: Visualize prazos e eventos importantes diretamente no calendário.
+Comentários e discussões: Comunique-se com a equipe diretamente nas tarefas.
+Notificações em tempo real: Mantenha-se atualizado com notificações instantâneas.
+
+## 🚀 Tecnologias Utilizadas
+
+Back-end: Java, Servlets
+
+Front-end: JSP, HTML, CSS, JavaScript
+
+Banco de Dados: MySQL
+
+Gerenciamento de Dependências: Maven
+
+## 📦 Estrutura do Projeto
+```bash
+Gerenciador-de-Projetos/
+│
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── parmaxxx/
+│   │   │           └── gerenciadordeprojetos/
+│   │   │               ├── controller/
+│   │   │               ├── model/
+│   │   │               ├── service/
+│   │   │               └── dao/
+│   │   ├── resources/
+│   │   └── webapp/
+│   │       ├── WEB-INF/
+│   │       ├── css/
+│   │       ├── js/
+│   │       └── pages/
+└── pom.xml
+```
+## ⚙️ Como Rodar o Projeto
+
+Clone o repositório:
+```bash
+git clone https://github.com/Parmaxxx/Gerenciador-de-Projetos.git
+```
+Importe o projeto na sua IDE preferida.
+
+Configure o banco de dados MySQL:
+
+Crie um banco de dados chamado gerenciador_de_projetos.
+
+Execute o script SQL em src/main/resources/database.
+sql para criar as tabelas.
+
+Configure as credenciais do banco de dados no arquivo src/main/resources/db.properties.
+
+Execute o projeto:
+
+Utilize o Maven para construir o projeto.
+
+Execute o servidor de aplicação (Tomcat).
+
+Acesse a aplicação:
+
+Abra o navegador e vá para http://localhost:8080/Gerenciador-de-Projetos.
+
+
+### 🤝 Contribuições são bem-vindas!
+
+
+
+## Sera necessario para utilizar a aplicação os seguintes requisitos
 JDK 21.0.2 Hotspot ou mais recente;
 Apache TomCat 10- no disco local C: ;
 MySQL Server; 
